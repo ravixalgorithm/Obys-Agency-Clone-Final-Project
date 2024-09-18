@@ -19,7 +19,7 @@ function loadingAnimation() {
         } else {
           h5timer.innerHTML = grow;
         }
-      }, 27);
+      }, 5);
     },
   });
 
@@ -29,22 +29,41 @@ function loadingAnimation() {
   });
 
   tl.to("#loader", {
-    opacity: 0,
     duration: 0.2,
-    delay: 2.6,
+    delay: 0.5,
   });
 
   tl.from("#page1", {
-    delay: 0.1,
     y: 1600,
     duration: 0.5,
-    opacity: 0,
+    opacity: 1,
     ease: Power4,
   });
 
   tl.to("#loader", {
     display: "none",
   });
+
+  tl.from("#nav",{
+    opacity: 0
+  })
+
+  tl.from("#hero1 h1, #hero2 h1,#hero3 h2, #hero3 h3, #hero4 h1",{
+    y: 100,
+    stagger: 0.2
+  })
+}
+
+function mouseAnimation(){
+  document.addEventListener("mousemove", function (e) {
+    gsap.to("#cursor",{
+      top: e.y,
+      left: e.x,
+    })
+  })
+  
+  Shery.makeMagnet("#navpart2 h4", {});
 }
 
 loadingAnimation();
+mouseAnimation();
