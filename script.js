@@ -1,6 +1,6 @@
 function loadingAnimation() {
   var tl = gsap.timeline();
-  
+
   tl.from(".line h1", {
     y: 150,
     stagger: 0.25,
@@ -44,24 +44,24 @@ function loadingAnimation() {
     display: "none",
   });
 
-  tl.from("#nav",{
-    opacity: 0
-  })
+  tl.from("#nav", {
+    opacity: 0,
+  });
 
-  tl.from("#hero1 h1, #hero2 h1,#hero3 h2, #hero3 h3, #hero4 h1",{
+  tl.from("#hero1 h1, #hero2 h1,#hero3 h2, #hero3 h3, #hero4 h1", {
     y: 100,
-    stagger: 0.2
-  })
+    stagger: 0.2,
+  });
 }
 
-function mouseAnimation(){
+function mouseAnimation() {
   document.addEventListener("mousemove", function (e) {
-    gsap.to("#cursor",{
+    gsap.to("#cursor", {
       top: e.y,
       left: e.x,
-    })
-  })
-  
+    });
+  });
+
   Shery.makeMagnet("#navpart2 h4", {});
 }
 

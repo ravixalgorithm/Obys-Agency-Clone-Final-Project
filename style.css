@@ -12,7 +12,7 @@ body {
   width: 100%;
 }
 
-#cursor{
+#cursor {
   height: 2.5vw;
   width: 2.5vw;
   border-radius: 50%;
@@ -22,7 +22,7 @@ body {
   -o-border-radius: 50%;
   background-color: transparent;
   position: fixed;
-  z-index: 990;
+  z-index: 999;
   border: 1px solid #fff;
   mix-blend-mode: difference;
   transform: translate(-50%, -50%);
@@ -118,58 +118,94 @@ body {
   }
 }
 
-#page1{
-  height: 100vh;
-  width: 100%;
+#main{
   background-color: #151515;
 }
 
-#page1 #nav{
+#page1 {
+  height: 100vh;
+  width: 100%;
+}
+
+#page1 #nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5vh 8vw;
+  padding: 7vh 8vw;
 }
 
-#navpart2{
+#navpart2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3vw
+  gap: 3vw;
 }
 
-#navpart2 h4{
+#navpart2 h4 {
   font-weight: 400;
   font-size: 0.9vw;
 }
 
-.hero{
-  width: 70%;
-  margin-left: 30%;
+.hero {
+  width: 72%;
+  margin-left: 28%;
   overflow: hidden;
   height: fit-content;
   position: relative;
   z-index: 99;
 }
 
-.hero:nth-child(2){
+.hero:nth-child(2) {
   margin-top: 7vw;
 }
 
-.hero h1, .hero h2, .hero h3{
-  font-size: 6vw;
+.hero h1,
+.hero h2,
+.hero h3 {
+  font-size: 7vw;
   font-weight: 600;
   text-transform: uppercase;
-  line-height: 6vw;
+  line-height: 7.3vw;
+  letter-spacing: 0.3vw;
 }
 
-#hero3{
+#hero3 {
   display: flex;
 }
 
-#hero3 h2:hover{
+#hero3 h2 {
   text-decoration: underline;
+}
+
+#hero3 h2:hover {
+  text-decoration: none;
   -webkit-text-stroke: 1px #fff;
   font-weight: 500;
   color: transparent;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  padding-top: 20vh;
+  position: relative;
+}
+
+#video-container{
+  height: 70vh;
+  width: 72vw;
+  position: relative;
+  left: 27%;
+  background: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+}
+
+#video-container video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
