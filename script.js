@@ -19,7 +19,7 @@ function loadingAnimation() {
         } else {
           h5timer.innerHTML = grow;
         }
-      }, 5);
+      }, 30);
     },
   });
 
@@ -30,12 +30,11 @@ function loadingAnimation() {
 
   tl.to("#loader", {
     duration: 0.2,
-    delay: 0.5,
+    delay: 1,
     y: -800
   });
 
   tl.from("#page1", {
-    y: 1600,
     duration: 0.5,
     opacity: 1,
     ease: Power4,
