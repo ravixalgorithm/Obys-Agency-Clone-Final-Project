@@ -31,6 +31,7 @@ function loadingAnimation() {
   tl.to("#loader", {
     duration: 0.2,
     delay: 0.5,
+    y: -800
   });
 
   tl.from("#page1", {
@@ -38,10 +39,6 @@ function loadingAnimation() {
     duration: 0.5,
     opacity: 1,
     ease: Power4,
-  });
-
-  tl.to("#loader", {
-    display: "none",
   });
 
   tl.from("#nav", {
