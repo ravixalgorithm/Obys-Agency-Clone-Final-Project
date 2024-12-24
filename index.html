@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obys Agency Clone - Final Project</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+    <!-- Locomotive Scroll -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+
+    <!-- Shery.js -->
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    
+    <!-- Remix Icon -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -15,7 +24,6 @@
   </head>
 
   <body>
-
     <div id="loader">
       <div class="line">
         <div id="line1-part1">
@@ -97,25 +105,87 @@
         <div class="hero" id="hero4">
           <h1>Experience</h1>
         </div>
+        <img id="flag" src="https://obys.agency/wp-content/uploads/2022/03/Flag.jpg" alt="">
       </div>
       <div id="page2" data-scroll data-scroll-speed="-2">
         <div id="video-container">
           <div id="video-cursor">
             <i class="ri-play-fill"></i>
           </div>
-          <img
-            src="https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg"
-            alt=""
-          />
           <video
-            autoplay
             loop
-            muted
             src="https://obys.agency/wp-content/uploads/2022/11/Obys-Showreel-2022.mp4"
           ></video>
         </div>
       </div>
-      <div id="page3" data-scroll></div>
+      <div id="page3" data-scroll>
+        <h1>Our Projects</h1>
+        <div class="underline"></div>
+        <div id="img-div-container">
+          <div class="image-div">
+            <img
+              src="https://images.unsplash.com/photo-1612350495627-d4e662f7dff2?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1667572737027-98910f2cbc89?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhvbHl8ZW58MHwxfDB8fHww"
+              alt=""
+            />
+          </div>
+          <div class="image-div">
+            <img
+              src="https://images.unsplash.com/photo-1522292962303-4b234c678661?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fHdvcmR8ZW58MHwxfDB8fHww"
+              alt=""
+            />
+            <img
+              src="https://plus.unsplash.com/premium_photo-1672759455680-82153fc18a03?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fHdvcmR8ZW58MHwxfDB8fHww"
+              alt=""
+            />
+          </div>
+          <div class="page3-circle1">
+            <svg class="button__arrow" viewBox="0 0 91 118" fill="none">
+              <path
+                d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <div class="circle-in">
+              <p>We are thrilled to have you on board. We hope you enjoy the projects 🧡</p>
+            </div>
+          </div>
+          <div class="page3-circle2">
+            <svg class="button__arrow" viewBox="0 0 91 118" fill="none">
+              <path
+                d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <div class="circle-in">
+              <p>It will make you WOW! 😉</p>
+            </div>
+          </div>
+          <div class="image-div">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1687202582806-065e0e2c8bfe?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHdvcmR8ZW58MHwxfDB8fHww"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1596806032217-146c84269ffc?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGxpZmV8ZW58MHwxfDB8fHww"
+              alt=""
+            />
+          </div>
+          <div class="image-div">
+            <img
+              src="https://images.unsplash.com/photo-1609021442366-7a91ea8632d4?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHdvcmR8ZW58MHwxfDB8fHww"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1530530825359-afee0ccb4c9e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHdvcmR8ZW58MHwxfDB8fHww"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
       <div id="page4" data-scroll>
         <div id="page4-content">
           <h1>About Obys</h1>
@@ -134,38 +204,39 @@
             <p>
               We are happy to present our new website and updated version of
               Obys agency. As before we are open for new projects worldwide!
-              <br /> <br>
+              <br />
+              <br />
               Would you like to have award winning site or unique branding
-              style, please say hi to our manager —info@obys.agency. <br> we will
-              help you with the pleasure.
+              style, please say hi to our manager —info@obys.agency. <br />
+              we will help you with the pleasure.
             </p>
           </div>
           <div id="page4-blue-div">
             <div class="blue-div-elem">
-                <h4>Awwwards x16</h4>
-                <p>SOTM, SOTD and Honrable Mentions</p>
+              <h4>Awwwards x16</h4>
+              <p>SOTM, SOTD and Honrable Mentions</p>
             </div>
-            <hr>
+            <hr />
             <div class="blue-div-elem">
-                <h4>Red Dot Award x1</h4>
-                <p>Best of the Best</p>
+              <h4>Red Dot Award x1</h4>
+              <p>Best of the Best</p>
             </div>
-            <hr>
+            <hr />
             <div class="blue-div-elem">
-                <h4>FWA x11</h4>
-                <p>FWA of The Day</p>
+              <h4>FWA x11</h4>
+              <p>FWA of The Day</p>
             </div>
-            <hr>
+            <hr />
             <div class="blue-div-elem">
-                <h4>CSSDA x23</h4>
-                <p>WOTM, WOTD and UI, UX, Innovation</p>
+              <h4>CSSDA x23</h4>
+              <p>WOTM, WOTD and UI, UX, Innovation</p>
             </div>
-            <hr>
+            <hr />
             <div class="blue-div-elem">
-                <h4>Behance x25</h4>
-                <p>Interaction, Graphic Design</p>
+              <h4>Behance x25</h4>
+              <p>Interaction, Graphic Design</p>
             </div>
-            <hr>
+            <hr />
           </div>
           <div class="underline"></div>
           <h4 id="endline">We work with</h4>
@@ -173,51 +244,57 @@
       </div>
       <div id="page5" data-scroll>
         <div class="elem">
-            <h1>Sport - <span>Fashion</span> - Technology - </h1>
-            <h1>Sport - <span>Fashion</span> - Technology - </h1>
+          <h1>Sport - <span>Fashion</span> - Technology -</h1>
+          <h1>Sport - <span>Fashion</span> - Technology -</h1>
         </div>
         <div class="elem2">
-            <h1>Real Estate - <span>Beauty</span> - Architecture - </h1>
-            <h1>Real Estate - <span>Beauty</span> - Architecture - </h1>
+          <h1>Real Estate - <span>Beauty</span> - Architecture -</h1>
+          <h1>Real Estate - <span>Beauty</span> - Architecture -</h1>
         </div>
         <div class="elem">
-            <h1><span>Science</span> - Partners - <span>Travel</span> - </h1>
-            <h1><span>Science</span> - Partners - <span>Travel</span> - </h1>
+          <h1><span>Science</span> - Partners - <span>Travel</span> -</h1>
+          <h1><span>Science</span> - Partners - <span>Travel</span> -</h1>
         </div>
         <div class="elem2">
-            <h1><span>Music</span> - Automotive - <span>Hotels</span> - </h1>
-            <h1><span>Music</span> - Automotive - <span>Hotels</span> - </h1>
+          <h1><span>Music</span> - Automotive - <span>Hotels</span> -</h1>
+          <h1><span>Music</span> - Automotive - <span>Hotels</span> -</h1>
         </div>
       </div>
       <div id="footer" data-scroll>
         <h1>Let's Create</h1>
         <div class="underline"></div>
         <div id="footer-div">
-            <div class="box">
-                <h6>Socials</h6>
-                <h5><a href="">GitHub</a></h5>
-                <h5><a href="">LinkedIn</a></h5>
-                <h5><a href="">X</a></h5>
-                <h5><a href="">DEV.to</a></h5>
-                <h5><a href="">YouTube</a></h5>
-                <h5><a href="">Instagram</a></h5>
-            </div>
-            <div class="box">
-                <h6>About me</h6>
-                <h5>A 2nd Year CSE Student at HBTU Kanpur</h5>
-            </div>
-            <div class="box">
-                <h6>Say Hi !</h6>
-                <h5>230104047@hbtu.ac.in</h5>
-            </div>
+          <div class="box">
+            <h6>Socials</h6>
+            <h5><a href="">GitHub</a></h5>
+            <h5><a href="">LinkedIn</a></h5>
+            <h5><a href="">X</a></h5>
+            <h5><a href="">DEV.to</a></h5>
+            <h5><a href="">YouTube</a></h5>
+            <h5><a href="">Instagram</a></h5>
+          </div>
+          <div class="box">
+            <h6>About me</h6>
+            <h5>A 2nd Year CSE Student at HBTU Kanpur</h5>
+          </div>
+          <div class="box">
+            <h6>Say Hi !</h6>
+            <h5>230104047@hbtu.ac.in</h5>
+          </div>
         </div>
         <div class="underline"></div>
-        <h5>This is an educational clone of the <a href="https://obys.agency/">Obys Agency website</a>, All rights reserved to Owner</h5>
+        <h5>
+          This is an educational clone of the
+          <a href="https://obys.agency/">Obys Agency website</a>, All rights
+          reserved to Owner
+        </h5>
       </div>
     </div>
 
+    <!-- locomotive-scroll -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
+    <!-- GSAP -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
       integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
@@ -225,6 +302,7 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- ScrollTrigger -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
       integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
@@ -232,10 +310,19 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <!-- Shery.js -->
     <script
       type="text/javascript"
       src="https://unpkg.com/sheryjs/dist/Shery.js"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/fluffy-factory/magnet-mouse@latest/lib/magnet-mouse.min.js"></script>
 
     <script src="script.js"></script>
   </body>
