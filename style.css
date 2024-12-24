@@ -17,26 +17,6 @@ body{
   overflow-x: hidden;
 }
 
-#cursor {
-  height: 2.5vw;
-  width: 2.5vw;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  background-color: transparent;
-  position: fixed;
-  z-index: 999;
-  border: 1px solid #fff;
-  mix-blend-mode: difference;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-}
-
 #loader {
   height: 100%;
   width: 100%;

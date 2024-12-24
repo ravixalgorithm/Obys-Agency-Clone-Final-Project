@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obys Agency Clone - Final Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -14,7 +15,6 @@
   </head>
 
   <body>
-    <div id="cursor"></div>
 
     <div id="loader">
       <div class="line">
@@ -33,7 +33,7 @@
       </div>
     </div>
     <div id="main">
-      <div id="page1">
+      <div id="page1" data-scroll>
         <div id="nav">
           <svg class="brand__svg" width="71" height="27" viewBox="0 0 71 27">
             <path
@@ -98,7 +98,7 @@
           <h1>Experience</h1>
         </div>
       </div>
-      <div id="page2">
+      <div id="page2" data-scroll data-scroll-speed="-2">
         <div id="video-container">
           <div id="video-cursor">
             <i class="ri-play-fill"></i>
@@ -115,8 +115,8 @@
           ></video>
         </div>
       </div>
-      <div id="page3"></div>
-      <div id="page4">
+      <div id="page3" data-scroll></div>
+      <div id="page4" data-scroll>
         <div id="page4-content">
           <h1>About Obys</h1>
           <div class="underline"></div>
@@ -171,7 +171,7 @@
           <h4 id="endline">We work with</h4>
         </div>
       </div>
-      <div id="page5">
+      <div id="page5" data-scroll>
         <div class="elem">
             <h1>Sport - <span>Fashion</span> - Technology - </h1>
             <h1>Sport - <span>Fashion</span> - Technology - </h1>
@@ -189,7 +189,7 @@
             <h1><span>Music</span> - Automotive - <span>Hotels</span> - </h1>
         </div>
       </div>
-      <div id="footer">
+      <div id="footer" data-scroll>
         <h1>Let's Create</h1>
         <div class="underline"></div>
         <div id="footer-div">
@@ -215,6 +215,8 @@
         <h5>This is an educational clone of the <a href="https://obys.agency/">Obys Agency website</a>, All rights reserved to Owner</h5>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
