@@ -139,10 +139,47 @@ body {
   gap: 3vw;
 }
 
-#navpart2 h4 {
+#navpart2 a {
   font-weight: 400;
   font-size: 0.9vw;
 }
+
+#animation {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1.20rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: all 0.3s cubic-bezier(.2, 0, 0, 1);
+  z-index: 1;
+}
+
+#animation::after {
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  right: 1.25rem;
+  left: 1.25rem;
+  background-color: #ffffff;
+  transition: all 0.3s cubic-bezier(.2, 0, 0, 1);
+  transform-origin: bottom center;
+  z-index: -1;
+}
+
+#animation:hover {
+  color: #2D2D2D;
+}
+
+#animation:hover::after {
+  right: 0;
+  left: 0;
+  height: 100%;
+}
+
 
 .hero {
   width: 72%;
@@ -430,7 +467,14 @@ body {
   letter-spacing: 0.2vw;
 }
 
-#page4-content .underline {
+#page4-content .underline1 {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin: 6vw 0 3vw 0;
+}
+
+#page4-content .underline2 {
   width: 100%;
   height: 1px;
   background-color: #fff;
@@ -583,7 +627,7 @@ body {
 }
 
 #footer {
-  height: 110vh;
+  height: 120vh;
   width: 100%;
   background-color: #151515;
   position: relative;
@@ -599,6 +643,13 @@ body {
   line-height: 7.3vw;
   letter-spacing: 0.2vw;
   position: relative;
+  display: inline;
+}
+
+#footer i{
+  font-size: 7.1vw;
+  color: #fff;
+  margin-left: 2vw;
 }
 
 #footer::before {
@@ -640,6 +691,29 @@ body {
   font-weight: 500;
 }
 
+#footer>h5>a::after{
+  display: none;
+}
+
+#footer>h5{
+  font-size: 0.8vw;
+  font-weight: 500;
+  color: #fff;
+  display: inline;
+}
+
+#footer>h5>a{
+  font-size: 0.8vw;
+  font-weight: 500;
+  color: #fff;
+  display: inline;
+  text-decoration: underline;
+}
+
+#footer>h5>a:hover{
+  color: #fff
+}
+
 ._canvas_container {
   z-index: 999999 !important;
   pointer-events: none;
@@ -660,4 +734,40 @@ body {
 
 #hero3{
   z-index: 999;
+}
+
+
+#page4-content #try {
+  font-size: 1.3vw;
+  margin: 0;
+  color: #fff;
+  a {
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      color: inherit;
+      margin: 0 var(--spacing, 0px);
+      transition: margin .25s;
+      svg {
+          width: 76px;
+          height: 40px;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translate(-50%, 7px) translateZ(0);
+          fill: none;
+          stroke: var(--stroke, #ffffff);
+          stroke-linecap: round;
+          stroke-width: 2px;
+          stroke-dasharray: var(--offset, 69px) 278px;
+          stroke-dashoffset: 361px;
+          transition: stroke .25s ease var(--stroke-delay, 0s), stroke-dasharray .35s;
+      }
+      &:hover {
+          --spacing: 4px;
+          --stroke: #275EFE;
+          --stroke-delay: .1s;
+          --offset: 180px;
+      }
+  }
 }

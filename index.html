@@ -13,7 +13,13 @@
 
     <!-- Shery.js -->
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
-    
+
+    <!-- animate css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+
     <!-- Remix Icon -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -86,9 +92,9 @@
             ></path>
           </svg>
           <div id="navpart2">
-            <h4>Works</h4>
-            <h4>About</h4>
-            <h4>Contacts</h4>
+            <a id="animation" href="#">Works</a>
+            <a id="animation" href="#">About</a>
+            <a id="animation" href="#">Contacts</a>
           </div>
         </div>
         <div class="hero" id="hero1">
@@ -105,7 +111,11 @@
         <div class="hero" id="hero4">
           <h1>Experience</h1>
         </div>
-        <img id="flag" src="https://obys.agency/wp-content/uploads/2022/03/Flag.jpg" alt="">
+        <img
+          id="flag"
+          src="https://obys.agency/wp-content/uploads/2022/03/Flag.jpg"
+          alt=""
+        />
       </div>
       <div id="page2" data-scroll data-scroll-speed="-2">
         <div id="video-container">
@@ -150,7 +160,10 @@
               ></path>
             </svg>
             <div class="circle-in">
-              <p>We are thrilled to have you on board. We hope you enjoy the projects 🧡</p>
+              <p>
+                We are thrilled to have you on board. We hope you enjoy the
+                projects 🧡
+              </p>
             </div>
           </div>
           <div class="page3-circle2">
@@ -189,7 +202,7 @@
       <div id="page4" data-scroll>
         <div id="page4-content">
           <h1>About Obys</h1>
-          <div class="underline"></div>
+          <div class="underline1"></div>
           <p>
             Our agency is about people who love creating, designing and
             developing wow projects. In the same time we are a boutique agency
@@ -238,8 +251,17 @@
             </div>
             <hr />
           </div>
-          <div class="underline"></div>
-          <h4 id="endline">We work with</h4>
+          <div class="underline2"></div>
+          <p id="try">
+            We
+            <a id="try-link" href="#">
+                WORK
+                <svg viewBox="0 0 70 36">
+                    <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                </svg>
+            </a>
+            with
+        </p>
         </div>
       </div>
       <div id="page5" data-scroll>
@@ -262,16 +284,17 @@
       </div>
       <div id="footer" data-scroll>
         <h1>Let's Create</h1>
+        <i class="ri-arrow-right-double-fill"></i>
         <div class="underline"></div>
         <div id="footer-div">
           <div class="box">
             <h6>Socials</h6>
-            <h5><a href="">GitHub</a></h5>
-            <h5><a href="">LinkedIn</a></h5>
-            <h5><a href="">X</a></h5>
-            <h5><a href="">DEV.to</a></h5>
-            <h5><a href="">YouTube</a></h5>
-            <h5><a href="">Instagram</a></h5>
+            <h5><a id="animation" href="#">GitHub</a></h5>
+            <h5><a id="animation" href="#">LinkedIn</a></h5>
+            <h5><a id="animation" href="#">X</a></h5>
+            <h5><a id="animation" href="#">DEV.to</a></h5>
+            <h5><a id="animation" href="#">YouTube</a></h5>
+            <h5><a id="animation" href="#">Instagram</a></h5>
           </div>
           <div class="box">
             <h6>About me</h6>
@@ -284,9 +307,7 @@
         </div>
         <div class="underline"></div>
         <h5>
-          This is an educational clone of the
-          <a href="https://obys.agency/">Obys Agency website</a>, All rights
-          reserved to Owner
+          This is an educational clone of the <a href="https://obys.agency/">Obys Agency website</a>, All rights reserved to Owner
         </h5>
       </div>
     </div>
@@ -303,12 +324,7 @@
     ></script>
 
     <!-- ScrollTrigger -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <!-- Three.js is needed for 3d Effects -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
@@ -322,6 +338,25 @@
       src="https://unpkg.com/sheryjs/dist/Shery.js"
     ></script>
 
+    <!-- J-Query -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- lettering.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
+      integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Textillate.js -->
+    <script src="https://cdn.jsdelivr.net/npm/textillate@0.4.1/jquery.textillate.min.js"></script>
+
+    <!-- Magnet Mouse -->
     <script src="https://cdn.jsdelivr.net/gh/fluffy-factory/magnet-mouse@latest/lib/magnet-mouse.min.js"></script>
 
     <script src="script.js"></script>

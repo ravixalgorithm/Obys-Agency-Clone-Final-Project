@@ -70,7 +70,7 @@ function loadingAnimation() {
 
   tl.to("#loader", {
     duration: 0.2,
-    delay: 1,
+    delay: 2.2,
     y: -800,
   });
 
@@ -224,9 +224,73 @@ function sheryAnimation() {
   });
 }
 
+function textAnimation() {
+  const footerH1 = document.querySelector("#footer h1");
+
+  footerH1.addEventListener("mouseenter", () => {
+    footerH1.style.fontFamily = 'silk serif';
+    footerH1.style.color = 'transparent';
+    footerH1.style.webkitTextStroke = "1px #fff";
+    footerH1.style.fontWeight = '400'
+  });
+
+  footerH1.addEventListener("mouseleave", () => {
+    footerH1.style.fontFamily = 'plain light';
+    footerH1.style.color = '#fff';
+    footerH1.style.webkitTextStroke = "none";
+    footerH1.style.fontWeight = '600'
+  });
+}
+
+function lineAnimation() {
+  var tl = gsap.timeline();
+  tl.from("#page3 .underline",{
+    width: "0%",
+    scrollTrigger:{
+        trigger: "#page3 .underline",
+        scroller: "#main",
+        start: "top 70%",
+        end: "bottom 40%",
+        scrub: true
+    },
+  })
+  tl.from("#page4-content .underline1",{
+    width: "0%",
+    scrollTrigger:{
+        trigger: "#page4-content .underline1",
+        scroller: "#main",
+        start: "top 70%",
+        end: "bottom 40%",
+        scrub: true
+    }
+  })
+  tl.from("#page4-content .underline2",{
+    width: "0%",
+    scrollTrigger:{
+        trigger: "#page4-content .underline2",
+        scroller: "#main",
+        start: "top 70%",
+        end: "bottom 40%",
+        scrub: true
+    }
+  })
+  tl.from("#footer .underline",{
+    width: "0%",
+    scrollTrigger:{
+        trigger: "#footer .underline",
+        scroller: "#main",
+        start: "top 70%",
+        end: "bottom 40%",
+        scrub: true
+    }
+  })
+}
+
 loadingAnimation();
 mouseAnimation();
 locomotiveAnimation();
 videoCursorAnimation();
 sheryAnimation();
 flagAnimation();
+textAnimation();
+lineAnimation();
